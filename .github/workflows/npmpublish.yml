@@ -42,7 +42,7 @@ jobs:
       - name: Build the package
         run: |
           npm pack ./dist/zxing-scanner
-          mv zxing-ngx-scanner-*.tgz ./package.tgz
+          mv sondreb-ngx-scanner-*.tgz ./package.tgz
 
       - name: Upload build artifacts
         uses: actions/upload-artifact@v4
