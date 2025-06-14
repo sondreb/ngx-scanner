@@ -60,6 +60,13 @@ jobs:
         with:
           name: pack-artifact
 
+      - name: List artifact contents
+        run: |
+          echo "Listing pack-artifact directory:"
+          ls -la ./pack-artifact/
+          echo "Recursively listing all files:"
+          find ./pack-artifact/ -type f -name "*.tgz"
+
       - uses: actions/setup-node@v4
         with:
           node-version: 22
